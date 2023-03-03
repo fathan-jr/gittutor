@@ -1,0 +1,51 @@
+# F O R K
+- membuat duplikat dari repo orang lain
+- Jembatan antara repo original dan duplikat
+- Modifikasi terhada repo original. Kadang modifikasi untuk kebutuhan projek kira
+- Berkontribusi pada repo orang lain. 
+	> ngebuat projek update-an
+	> nambahin fitur atau nambal bug, kalo udah beres kita pull request ke author projeknya.
+
+> Add semua ke staging area, termasuk yg udah dihapus
+	$ git add .
+
+> Melihat log dari file tertentu
+	$ git log -- nama_file
+	$ git log -- style.css
+
+> Mengembalikan keadaan suatu file
+	$ git checkout 5_digit_commit_hash -- nama_file
+	$ git checkout 7667b -- style.css
+
+# Jenis Merged
+	## Fast Forward
+		- Kalau direct path
+		- Pindah ke commit branch yang dimerge
+	## Three way
+		- Kalau gak direct path
+		- Buat commit baru, hasil merge pindah ke sini
+
+> Membuat branch
+	$ git branch nama branch
+
+> Nge-list nama branch
+	$ git branch
+
+> Pindah branch
+	$ git checkout nama_branch
+
+> Merge branch
+	$ git merge nama_branch
+
+> Melihat branch yang sudah dimerge
+	$ git branch --merged
+
+> Delete Branch
+	- Branch ga kepake yang udah dimerge
+	$ git branch -d nama_branch
+	
+	- Branch yang belum di merge
+	$ git branch -D nama_branch
+
+# Remote
+	## Push
